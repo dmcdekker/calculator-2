@@ -13,9 +13,9 @@ def calculator_2():
         user_input = raw_input()
         user_input = user_input.split(" ")
 
-        user_input[1] = int(user_input[1])
-        user_input[2] = int(user_input[2])
-
+        for each in range(1,len(user_input)):
+            user_input[each] = int(user_input[each])
+        
         print user_input
         if user_input[0] == "+":
             result = add(user_input[1], user_input[2])
