@@ -25,7 +25,7 @@ def calculator_2():
                     user_input[each] = float(user_input[each])
 
             if operator == "+":
-                result = add(user_input[1], user_input[2])
+                result = reduce(lambda x, y: add(x, y), user_input)
             elif operator == "-":
                 result = subtract(user_input[1], user_input[2])
             elif operator == "/":
